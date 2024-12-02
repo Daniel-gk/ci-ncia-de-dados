@@ -1,7 +1,6 @@
+const url = 'https://github.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/blob/Aula01/trabalho/trabalho-dados-gerais.json'
 
-async function quantidadeUsuarios() {
-    const url = '
-https://github.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/blob/Aula01/trabalho/trabalho-dados-gerais.json'
+async function quantidadeUsuarios() {    
     const res = await fetch(url)
     const dados = await res.json()
     const pessoas_mundo = Object.keys(dados)
